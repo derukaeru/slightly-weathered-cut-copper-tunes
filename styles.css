@@ -1,0 +1,44 @@
+@font-face {
+    font-family: SpaceMono;
+    src: url("SpaceMono-Regular.ttf");
+}
+
+body {
+    font-family: SpaceMono, monospace;
+}
+
+#main-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 4vh;
+    margin-top: 4vh;
+}
+
+#author {
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+}
+
+#map {
+    height: 300px;
+}
+
+#tone-visualizer {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.bar {
+    width: 10px;
+    height: 30px;
+    background-color: #222222;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.bar.active {
+
+}
