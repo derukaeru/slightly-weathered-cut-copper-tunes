@@ -29,6 +29,7 @@ body {
     justify-self: center;
     height: 300px;
     width: 400px;
+    border-radius: 8px;
 }
 
 #map-label {
@@ -38,7 +39,6 @@ body {
 
 #tone-visualizer {
     display: flex;
-    background-color: #222222;
     justify-content: center;
     gap: 4px;
 }
@@ -46,7 +46,9 @@ body {
 .bar {
     width: 10px;
     height: 30px;
+    background-color: #222222;
     transition: background-color 0.1s ease, transform 0.1s ease;
+    border-radius: 8px;
 }
 
 .bar.active {
