@@ -4,6 +4,8 @@
 }
 
 body {
+    background-color: #f5f5f5;
+    color: #222222;
     font-family: SpaceMono, monospace;
 }
 
@@ -12,7 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    row-gap: 4vh;
+    row-gap: 8px;
     margin-top: 4vh;
 }
 
@@ -20,14 +22,23 @@ body {
     position: absolute;
     bottom: 0;
     left: 8px;
+    font-size: 12px;
 }
 
 #map {
+    justify-self: center;
     height: 300px;
+    width: 400px;
+}
+
+#map-label {
+    margin-top: -8px;
+    font-size: 12px;
 }
 
 #tone-visualizer {
     display: flex;
+    background-color: #222222;
     justify-content: center;
     gap: 4px;
 }
@@ -35,10 +46,16 @@ body {
 .bar {
     width: 10px;
     height: 30px;
-    background-color: #222222;
     transition: background-color 0.1s ease, transform 0.1s ease;
 }
 
 .bar.active {
+    background-color: #f5f5f5;
+}
 
+#jumpscare {
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    font-size: 12px;
 }

@@ -4,11 +4,12 @@
         <title>slightly-weather-cut-copper-tunes</title>
 
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     </head>
     <body>
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.9.17/Tone.js"></script>
+        <script src="weather.js" defer></script>
         <script src="tune.js" defer></script>
         <script src="main.js" defer></script>
 
@@ -16,9 +17,11 @@
             <h1>slightly weathered cut copper tunes</h1>
 
             <div id="map"></div>
+            <p id="map-label">choose a location</p>
             <div id="tune-visualizer"></div>
 
             <p id="author">@derukaeru</p>
+            <p id="jumpscare">light mode jumpscare >:)</p>
         </div>
     </body>
 </html>
