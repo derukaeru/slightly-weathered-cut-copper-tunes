@@ -42,6 +42,7 @@ function create_tune(data) {
 
 
   Tone.start().then(() => Tone.Transport.start());
+  stop_button.style.display = "flex";
 }
 
 function end_tune() {
@@ -51,4 +52,6 @@ function end_tune() {
     current_sequence = null;
   }
   Tone.Transport.stop();
+  stop_button.style.display = "none";
+  remove_bars()
 }

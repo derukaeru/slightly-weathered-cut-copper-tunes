@@ -1,4 +1,5 @@
 var tune_visualizer = document.getElementById("tune-visualizer")
+var stop_button = document.getElementById("stop")
 var last_active_bar
 
 const map = L.map("map").setView([0, 0], 1)
@@ -30,7 +31,7 @@ function render_bars(notes) {
 
 function highlight_bar(index) {
   if (last_active_bar) {
-    last_active_bar.classList.remove("bar")
+    last_active_bar.classList.remove("active")
   }
 
   let next_bar = document.querySelector(`.bar[data-index="${index}"]`)
